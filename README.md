@@ -8,3 +8,5 @@
 5. setting homestead -> [ja doc](https://readouble.com/laravel/5.1/ja/homestead.html#Homestead設定)
 6. run `vagrant up`
 7. complete. Enter the virtual environment with `vagrant ssh`.
+
+If you change the `sites` property after provisioning the Homestead box, you should re-run `vagrant reload --provision` to update the Nginx configuration on the virtual machine.
