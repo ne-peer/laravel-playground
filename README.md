@@ -11,6 +11,9 @@
 
 If you change the `sites` property after provisioning the Homestead box, you should re-run `vagrant reload --provision` to update the Nginx configuration on the virtual machine.
 
-## Tip
-### `npm install` problem occur.
+## Troubleshooting
+### `npm install` problem occur?
 -> Instead the run `npm install --no-bin-links`.
+
+### Occur the `cross-env: not found` error on `npm run dev` ?
+-> Rewrite the `cross-env` to `node node_modules/cross-env/dist/bin/cross-env.js` on **package.json**.
